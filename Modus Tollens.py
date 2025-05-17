@@ -6,7 +6,7 @@ q = True   # "The ground is wet"
 
 #!---------------------- [ METHODS ] --------------------#
 # p -> q
-def if_p_then_q(p, q):
+def conditional_proposition(p, q):
     return (not p) or q
 
 # Modus Tollens:
@@ -18,7 +18,7 @@ def modus_tollens(p_implies_q, q):
         return False  # cannot conclude "not P"
 
 #?------------ public static void main {} ---------------#
-p_implies_q = if_p_then_q(p, q)
+p_implies_q = conditional_proposition(p, q)
 not_p = modus_tollens(p_implies_q, q)
 
 print("\n--------------- [ OUTPUT ] ---------------")

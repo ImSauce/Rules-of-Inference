@@ -7,7 +7,7 @@ q = True  # "The ground is wet"
 
 #!---------------------- [ METHODS ] --------------------#
 # p -> q
-def if_p_then_q(p, q):
+def conditional_proposition(p, q):
     return (not p) or q
 
 # p
@@ -26,7 +26,7 @@ def modus_ponens(p_then_q, p):
 
 #?------------ public static void main {} ---------------#
 # Check if implication holds
-p_implies_q = if_p_then_q(p, q)
+p_implies_q = conditional_proposition(p, q)
 
 # Apply modus ponens
 result = modus_ponens(p_implies_q, p)

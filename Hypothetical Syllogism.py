@@ -8,7 +8,7 @@ r = True   # "I graduate"
 
 #!---------------------- [ METHODS ] --------------------#
 # Logical implication function
-def if_then(x, y):
+def conditional_proposition(x, y):
     return (not x) or y
 
 # Hypothetical Syllogism:
@@ -20,8 +20,8 @@ def hypothetical_syllogism(p_to_q, q_to_r):
 
 #?------------ public static void main {} ---------------#
 # Compute the two implications
-p_to_q = if_then(p, q)     # If I study then I pass
-q_to_r = if_then(q, r)     # If I pass then I graduate
+p_to_q = conditional_proposition(p, q)     # If I study then I pass
+q_to_r = conditional_proposition(q, r)     # If I pass then I graduate
 
 # Chain them
 p_to_r = hypothetical_syllogism(p_to_q, q_to_r)
