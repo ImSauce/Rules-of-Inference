@@ -6,12 +6,12 @@ p = True   # "I study"
 q = True  # "I pass the test" (doesn't matter for the rule)
 
 #!-------------------------- [ METHODS ] -------------------------#
-def addition(p, q):
+def disjunction(p, q):
     # From p, infer p ∨ q
     return p or q
 
 #?----------------- main logic -------------------#
-p_or_q = addition(p, q)
+p_or_q = disjunction(p, q)
 
 # Output
 print(" ")
